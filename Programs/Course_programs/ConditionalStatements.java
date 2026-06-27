@@ -146,6 +146,5 @@ public class ConditionalStatements {
     // Note:
     // = is assignment operator
     // == is comparison operator
-
   }
 }
