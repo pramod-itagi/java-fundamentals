@@ -45,10 +45,10 @@ If `java` is not recognized:
 1. Download **JDK 25** from Oracle
 2. Choose the installer for your Mac:
 
-   | Mac type | Installer |
-   | --- | --- |
+   | Mac type                 | Installer |
+   | ------------------------ | --------- |
    | Apple Silicon (M1/M2/M3) | ARM64 DMG |
-   | Intel | x64 DMG |
+   | Intel                    | x64 DMG   |
 
 3. Open the DMG, run the installer, and enter your password when prompted
 
@@ -57,9 +57,9 @@ If `java` is not recognized:
 1. Download **JDK 25** → **Linux**
 2. Choose the package for your distro:
 
-   | Package | Distros |
-   | --- | --- |
-   | Debian (`.deb`) | Ubuntu, Debian |
-   | RPM (`.rpm`) | Fedora, CentOS, RHEL |
+   | Package         | Distros              |
+   | --------------- | -------------------- |
+   | Debian (`.deb`) | Ubuntu, Debian       |
+   | RPM (`.rpm`)    | Fedora, CentOS, RHEL |
 
 3. Install the package with your system's package manager
