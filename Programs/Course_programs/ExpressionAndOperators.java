@@ -78,5 +78,120 @@ class ExpressionAndOperators {
      * Brackets will be executed first.
      */
 
+    /*
+     * Assignment operator: Assigning the value:
+     * Example:
+     * i = j
+     * 
+     * As per mathematics, it is equal but in programming languages, it is
+     * assignment. Here we are copying the value of j to the value of i.
+     */
+
+    // Example:
+    int i = 10;
+    int j = 20;
+    i = j;
+    System.out.println(i);
+    System.out.println(j);
+    // The i value will become 20 because we are copying the value of j into i.
+    // j value will remain same 20. Previous value of i (10) will get lost and we
+    // will not be able to retrieve it again.
+
+    // Note: During assignment, left side value should be a variable always. Right
+    // side can be a variable or value because variable will be containing the value
+    // as well.
+
+    // Example:
+    // 10 = a; -> Wrong
+    // a = 10; -> Right
+
+    // Assignment using expression
+    System.out.println(j = i + 2);
+    System.out.println(i = i * 2);
+    System.out.println(i = i + i);
+    System.out.println(i = i - i);
+
+    /*
+     * Increment/decrement operation: We can perform increment/decrement operation
+     * is two ways.
+     * 1. i = i + 1
+     * 2. i++ (This will be same as i = i + 1. This is shortcut)
+     * 
+     * Same for decrement
+     * 1. i = i - 1;
+     * 2. i--;
+     */
+
+    /*
+     * Note:
+     * 1. These holds good only if we are using same variable to perform operation
+     * and storing the result in same variable.
+     * 2. i++ and i--. These works only if we are incrementing/decrementing by 1.
+     * Example:
+     * i++ -> Works
+     * i+2 -> No
+     * 
+     */
+
+    /*
+     * Pre and post increment/decrement operators:
+     * 1. Pre increment/decrement: Evaluate first (increment/decrement) and then
+     * return new value.
+     * 2. Post increment/decrement: Return the old value first and then evaluate
+     * (increment/decrement).
+     * 
+     * Syntax for pre increment/decrement
+     * ++i or --i
+     * 
+     * Syntax for post increment/decrement
+     * i++ or i--
+     */
+
+    /*
+     * Compound assignment operators: Here it is similar to increment or decrement
+     * except that, here if we want to perform operation other than
+     * increment/decrement on same variable and store result, we can make use of
+     * shortcut. Variable on left and right side should be same.
+     * 
+     * For i = i * 2
+     * -> i *= 2
+     * 
+     * For i = i / 2
+     * -> i /= 2
+     * 
+     * For i = i + 3
+     * -> i += 3
+     * 
+     * For i = i - 7
+     * -> i -= 7
+     * 
+     * For i = i % 3
+     * -> i %= 3
+     */
+
+    /*
+     * Comparison operators: These operators are used to compare the values. These
+     * will return boolean true or false value.
+     * 
+     * Example:
+     * int i = 5;
+     * == : Equal to
+     * i == 5 -> true
+     * 
+     * != : Not Equal to
+     * i != 4 -> true
+     * 
+     * < : less than
+     * i < 4 -> false
+     * 
+     * > : greater than
+     * i > 4 -> true
+     * 
+     * <= : less than or equal to
+     * i <= 4 -> false
+     * 
+     * >= : greater than or equal to
+     * i >= 4 -> true
+     */
   }
 }
