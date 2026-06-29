@@ -23,6 +23,12 @@ public class Methods {
     System.out.println("Hello user");
   }
 
+  // Return calculated value using return. Here we are using int as data type as
+  // sum of two integers is integers itself
+  static int sumOfTwoNumbers(int firstNumber, int secondNumber) {
+    return firstNumber + secondNumber;
+  }
+
   public static void main(String[] args) {
     /*
      * Method: Method is a block og instructions which performs certain task when
@@ -108,6 +114,9 @@ public class Methods {
      * 
      * Calling method by passing argument:
      * methodName(arguments)
+     * 
+     * Note: Note that only 1 value is returned. Inputs can be anything but output
+     * will be only 1.
      */
 
     // calling method with argument
@@ -158,5 +167,35 @@ public class Methods {
 
     print("Pramod"); // Hello Pramod
     print(); // Hello user
+
+    /*
+     * Methods with return value: We can use different data types to methods to
+     * return the value from method and store it in a variable for future references
+     * or further usage.
+     * 
+     * Till now, we were just printing value in a method and sometimes we need to
+     * return the value from method for further execution.
+     * 
+     * return: This keyword is used to return the value from method. Once the value
+     * is returned, control will go back to the method call.
+     * 
+     * We need to have a variable to store that value.
+     * 
+     * Syntax: int sum(int a, int b) {
+     * int sum = a + b;
+     * return sum;
+     * }
+     * 
+     * Method call:
+     * int total = sum(2,3);
+     * 
+     * Here total will store the result of sum(2,3) method where it was returned by
+     * using sum variable in method.
+     * 
+     * Based on the type used for method, same value should be returned. Otherwise
+     * it will throw error.
+     */
+    int sum = sumOfTwoNumbers(5, 6);
+    System.out.println("Sum of two numbers: " + sum);
   }
 }
