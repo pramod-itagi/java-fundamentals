@@ -110,5 +110,110 @@ public class OperatorAndExpression {
      */
     System.out.println(5 + 5 * 6); // 35
     System.out.println((5 + 5) * 6); // 60
+
+    /*
+     * Assignment Operator: =
+     * This is used to assign a value to a variable.
+     * 
+     * Example:
+     * int a = 10;
+     * 
+     * Note: Assignment operator is used to assign a value to a variable. It is not
+     * used to compare values.
+     * 
+     * Note: left hand side should be a variable and right hand side should be a
+     * value or variable having value.
+     * Example:
+     * int a = 10;
+     * a = 20 // Valid
+     * a = 20 + a; // Valid
+     * 20 = a; // Error
+     * 
+     * 
+     */
+
+    /*
+     * If we assign a value to a variable, the previous value will be overwritten.
+     * We will not be able to retrieve the previous value.
+     */
+    int a = 10;
+    int b = 20;
+    a = b;
+    System.out.println(a); // 20
+    System.out.println(b); // 20
+
+    // We can perform operations using same variable and assign the result to the
+    // same variable.
+    a = a + b;
+    a = a + a; // Increment
+    a = a - a; // Decrement
+
+    /*
+     * Compound assignment operator: If we are performing operation on same variable
+     * and assign the result to the same variable, we can use compound assignment
+     * operator.
+     * 
+     * Compound operation refers to having multiple operators to evaluate an
+     * expression.
+     * 
+     * Example:
+     * int i = 0;
+     * i = i + 2;
+     * 
+     * Compound operation will be:
+     * i += 2;
+     * 
+     * Note: +=, -=, *=, /=, %= are the shortcut operators.
+     * 
+     */
+
+    int i = 0;
+    i += 1;
+    System.out.println(i); // 1
+    i -= 1;
+    System.out.println(i); // 0
+    i *= 2;
+    System.out.println(i); // 2
+    i /= 2;
+    System.out.println(i); // 1
+    i %= 2;
+    System.out.println(i); // 1
+
+    /*
+     * Pre increment and post increment:
+     * If we are appending the operand by 1 and assigning the result to the same
+     * variable, we can use pre increment and post increment operator.
+     * 
+     * Example:
+     * int i = 0;
+     * i++; // Post increment
+     * ++i; // Pre increment
+     * 
+     * Note: These pre and post operations should be used only when we are
+     * incrementing or decrementing the value by 1.
+     * 
+     * Note: Pre increment and post increment are different.
+     * Pre increment: Increment the value and then use the new value.
+     * Post increment: Use the old value and then increment the value.
+     *
+     */
+    int j = 0;
+    System.out.println(j++); // It will return 0 because it is post increment.
+    System.out.println(j); // j = 1 Now it will print incremented value.
+
+    // Pre increment
+    int k = 0;
+    System.out.println(++k); // It will return 1 because it is pre increment.
+    System.out.println(k); // k = 1 Now it will print incremented value.
+
+    // Pre decrement
+    int l = 0;
+    System.out.println(--l); // It will return -1 because it is pre decrement.
+    System.out.println(l); // l = -1 Now it will print decremented value.
+
+    // Post decrement
+    int m = 0;
+    System.out.println(m--); // It will return 0 because it is post decrement.
+    System.out.println(m); // m = -1 Now it will print decremented value.
   }
 }

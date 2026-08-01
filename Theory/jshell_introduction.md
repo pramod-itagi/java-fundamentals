@@ -24,3 +24,31 @@ Some useful JShell commands:
 - `/exit`: Exits JShell.
 
 JShell makes it easy to experiment with Java code and see the results instantly, which is especially helpful for learning and exploration.
+
+## Command History Navigation
+
+You can use the **Up** and **Down** arrow keys to scroll through the history of commands you have previously entered.
+
+## Editing Statements
+
+- Press **Ctrl + A** to move the cursor to the beginning of the current line.
+- Press **Ctrl + E** to move the cursor to the end of the current line.
+
+## Searching Statements
+
+To search through previously entered statements, use **Ctrl + R**. Press **Ctrl + R** repeatedly to cycle through additional matches in your history.
+
+Note: Each time you execute an expression or statement in JShell, the result is automatically stored in a special variable named with a dollar sign and a number (such as $1, $2, etc.). You can use these variables to reference the result of a previous expression in subsequent commands.
+
+Example:
+
+```
+int a = 10;
+int b = 20;
+a + b
+$1 => 30
+
+// Now, you can use $1, which contains the result of a + b, in the next expression:
+$1 + 10
+$2 => 40
+```

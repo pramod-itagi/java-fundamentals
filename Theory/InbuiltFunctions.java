@@ -32,11 +32,7 @@ public class InbuiltFunctions {
      * 4 and print the output on the screen.
      */
 
-    /*
-     * String: String is a textual data which is enclosed in double quotes ("").
-     * When anything is put under the double quotes and pass it in
-     * System.out.println() method, it will be printed as it is.
-     * 
+    /* 
      * Note: For Strings, spaces matters will printing. But for expressions, spaces
      * don't matter.
      * 
@@ -148,7 +144,17 @@ public class InbuiltFunctions {
     System.out.printf("Hello %s", "Pramod").println();
 
     // For floating point values
-    System.out.printf("%f + %f = %f", 5.0, 6.2, 5.0 + 6.2);
+    /*
+     * Note: If we just specify %f, it will take 6 digits after decimal point while
+     * printing. Hence, we can use %.2f or %.3f to reduce the number of digits after
+     * decimal point.
+     * 
+     * Example:
+     * 2 refers 2 digits after decimal point -> 5.00
+     * 3 refers 3 digits after decimal point -> 5.000
+     */
+    System.out.printf("%f + %f = %f", 5.0, 6.2, 5.0 + 6.2).println();
+    ;
 
     /*
      * Difference between println() and printf():
@@ -156,7 +162,7 @@ public class InbuiltFunctions {
      * println():
      * 1.It has new line character at the end.
      * 2. It is easy to use
-     * 3. Doesn;t support formatting
+     * 3. Doesn't support formatting
      * 4. Used for printing messages, logs etc.
      * 
      * printf():
@@ -166,5 +172,15 @@ public class InbuiltFunctions {
      * 4. Used for formatting the table and text.
      * 
      */
+
+    /*
+     * Printing values using println() and printf()
+     */
+
+    // println()
+    System.out.println("Values are: " + 10 + " and " + 20);
+
+    // printf()
+    System.out.printf("Values are: %d and %d", 10, 20).println();
   }
 }
