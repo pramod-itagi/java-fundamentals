@@ -21,6 +21,10 @@ jshell>
 Some useful JShell commands:
 
 - `/help intro`: Displays an introduction to JShell.
+- `/methods`: Displays all the methods which have been defined in the current session.
+- `/save backup.txt`: Saves the current session to a file in present working directory (pwd).
+- `/edit methodName`: Opens the method in the editor so that we can make changes to the method.
+- `/list methodName`: Displays the code of the method.
 - `/exit`: Exits JShell.
 
 JShell makes it easy to experiment with Java code and see the results instantly, which is especially helpful for learning and exploration.

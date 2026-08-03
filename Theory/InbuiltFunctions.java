@@ -8,7 +8,7 @@ public class InbuiltFunctions {
      * To print something on the console, we use System.out.println() method. It is
      * a predefined method.
      * 
-     * System: System is package from java.lang package.
+     * System: System is class from java.lang package.
      * 
      * out: out is public static final PrintStream out object.
      * 
@@ -32,7 +32,7 @@ public class InbuiltFunctions {
      * 4 and print the output on the screen.
      */
 
-    /* 
+    /*
      * Note: For Strings, spaces matters will printing. But for expressions, spaces
      * don't matter.
      * 
@@ -50,6 +50,15 @@ public class InbuiltFunctions {
      */
 
     /*
+     * There are some inbuilt functions provided by Math class. Math class is from
+     * java.math package.
+     * 
+     * All the math methods are static. Hence, we can call them directly using
+     * Math.methodName();
+     * where methodName() will be the methods provided by Math class.
+     * 
+     * -----------------------------------------------------------------------------
+     *
      * Math.random():
      * random() is a method of Math class.
      * This will provide random numbers between 0 and 1.
