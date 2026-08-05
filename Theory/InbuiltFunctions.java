@@ -163,7 +163,6 @@ public class InbuiltFunctions {
      * 3 refers 3 digits after decimal point -> 5.000
      */
     System.out.printf("%f + %f = %f", 5.0, 6.2, 5.0 + 6.2).println();
-    ;
 
     /*
      * Difference between println() and printf():

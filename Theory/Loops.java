@@ -63,8 +63,9 @@ public class Loops {
     // for (; x <= 10; x++);
 
     // We can pass multiple values in for loop
-    int a = 1;
-    int b = 2;
+    int a;
+    int b;
+
     for (a = 1, b = 2; x <= 10; a++, b++) {
       System.out.println(a);
       System.out.println(b);
