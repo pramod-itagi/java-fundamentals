@@ -117,6 +117,30 @@ static void revolve() {
 Planet.revolve();
 ```
 
+### 4. Packages
+
+**Packages** in Java are used to organize classes into different namespaces or directories. By grouping related classes together into packages, you can better structure your codebase and avoid class name conflicts. Each package typically corresponds to a folder in your project.
+
+### 5. Comments
+
+**Comments** are pieces of text added to code to provide explanations or context for anyone reading the code. Comments are ignored by the Java compiler and do not affect program execution. They are meant to help developers understand and maintain the code.
+
+There are two main types of comments in Java:
+
+- **Single-line comment:** Use `//` at the beginning of a line. Everything after `//` on that line is considered a comment.
+- **Multi-line comment:** Enclosed between `/*` and `*/`. Everything inside will be ignored by the compiler.
+
+**Examples:**
+
+```java
+// This is a single-line comment
+
+/*
+   This is a
+   multi-line comment
+*/
+```
+
 ---
 
 ## Running Java Code Outside of JShell
