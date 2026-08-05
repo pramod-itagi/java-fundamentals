@@ -29,7 +29,7 @@ So, how does bytecode get executed? That’s where the **Java Virtual Machine (J
 
 ### 1. Class
 
-A **class** is a template or blueprint representing a real-world entity. We use this template to create multiple instances of a class.
+A **class** is a template or blueprint representing a real-world entity. We use this template to create multiple instances of a class. Class also defines the data and behavior of the object.
 
 **Examples:**
 

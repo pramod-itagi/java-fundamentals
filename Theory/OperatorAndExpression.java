@@ -138,7 +138,12 @@ public class OperatorAndExpression {
      */
     int a = 10;
     int b = 20;
+    System.out.println(a);
+    System.out.println(b);
+
+    // Assign b value to a
     a = b;
+
     System.out.println(a); // 20
     System.out.println(b); // 20
 
@@ -147,6 +152,7 @@ public class OperatorAndExpression {
     a = a + b;
     a = a + a; // Increment
     a = a - a; // Decrement
+    System.out.println(a);
 
     /*
      * Compound assignment operator: If we are performing operation on same variable
