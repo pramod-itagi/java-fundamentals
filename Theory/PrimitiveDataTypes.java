@@ -522,8 +522,8 @@ public class PrimitiveDataTypes {
 
     // This works
     long l = 5000000l;
-    int i = (int) l;
-    System.out.println(i);
+    int i1 = (int) l;
+    System.out.println(i1);
 
     // This will show garbage value and loss of value will happen
     long l2 = 5000000000l;

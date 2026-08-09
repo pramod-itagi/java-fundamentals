@@ -31,12 +31,61 @@ public class BiNumber {
     number2 *= 2;
   }
 
+  public int calculateLCM() {
+    if (number1 < 0 || number2 < 0) {
+      return -1;
+    }
+
+    if (number1 == 0 || number2 == 0) {
+      return 0;
+    }
+
+    int max = Math.max(number1, number2);
+
+    if (max % number1 == 0 && max % number2 == 0) {
+      return max;
+    }
+
+    int lcm = max;
+    while (lcm % number1 != 0 || lcm % number2 != 0) {
+      lcm += max;
+    }
+
+    return lcm;
+  }
+
+  public int calculateGCD() {
+    if (number1 == 0 || number2 == 0) {
+      return 0;
+    }
+
+    if (number1 < 0 || number2 < 0) {
+      return 1;
+    }
+
+    if (number1 == number2) {
+      return number1;
+    }
+
+    int min = Math.min(number1, number2);
+
+    for (int i = min; i >= 1; i--) {
+      if (number1 % i == 0 && number2 % i == 0) {
+        return i;
+      }
+    }
+    return min;
+
+  }
+
   public static void main(String[] args) {
-    BiNumber biNumber = new BiNumber(2, 3);
+    BiNumber biNumber = new BiNumber(8, 6);
     System.out.println(biNumber.add());
     System.out.println(biNumber.multiply());
     biNumber.doubleNumbers();
     System.out.println(biNumber.getNumber1());
     System.out.println(biNumber.getNumber2());
+    System.out.println(biNumber.calculateLCM());
+    System.out.println(biNumber.calculateGCD());
   }
 }

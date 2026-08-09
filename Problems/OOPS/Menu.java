@@ -4,28 +4,36 @@ import java.util.Scanner;
 
 public class Menu {
   public static void main(String[] args) {
-    System.out.print("Enter number 1: ");
     Scanner scanner = new Scanner(System.in);
-    int number1 = scanner.nextInt();
+    int choice;
+    do {
+      System.out.print("Enter number 1: ");
+      int number1 = scanner.nextInt();
 
-    System.out.print("Enter number 2: ");
-    int number2 = scanner.nextInt();
+      System.out.print("Enter number 2: ");
+      int number2 = scanner.nextInt();
 
-    System.out.println("Choices available are:");
-    System.out.println("1: Addition\n2: Subtraction\n3: Multiplication\n4: Division");
+      System.out.println("Choices available are:");
+      System.out.println("1: Addition\n2: Subtraction\n3: Multiplication\n4: Division\n5: Exit");
 
-    System.out.print("Enter choice: ");
-    int choice = scanner.nextInt();
-    System.out.println("First number is: " + number1);
-    System.out.println("Second number is: " + number2);
-    System.out.println("Choice entered is: " + choice);
+      System.out.print("Enter choice: ");
+      choice = scanner.nextInt();
+      if (choice != 5) {
+        System.out.println("First number is: " + number1);
+        System.out.println("Second number is: " + number2);
+        System.out.println("Choice entered is: " + choice);
 
-    // using nested if
-    performOperationsUsingNestedIf(number1, number2, choice);
+        /*
+         * using nested if:
+         * 
+         * Commenting this as we have used switch below.
+         * performOperationsUsingNestedIf(number1, number2, choice);
+         */
+      }
+      // Using switch
+      performOperationsUsingSwitch(number1, number2, choice);
 
-    // Using switch
-    performOperationsUsingSwitch(number1, number2, choice);
-
+    } while (choice != 5);
   }
 
   private static void performOperationsUsingSwitch(int number1, int number2, int choice) {
@@ -47,7 +55,7 @@ public class Menu {
         System.out.printf("%d / %d = %d", number1, number2, number1 / number2).println();
         break;
       default:
-        System.out.println("Invalid choice");
+        System.out.println("Exiting..");
         break;
     }
   }
