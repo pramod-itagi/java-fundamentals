@@ -69,6 +69,9 @@ public class ConditionalStatements {
      * blocks are used to execute multiple statements.
      * They are represented by using {} (flower braces).
      * 
+     * They define the scope of different programming elements.
+     * They are also used to indent the code properly.
+     * 
      */
     if (j == 5) {
       System.out.println("j is odd");

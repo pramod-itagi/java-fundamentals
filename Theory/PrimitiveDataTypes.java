@@ -112,13 +112,25 @@ public class PrimitiveDataTypes {
      * -2147483648
      * 
      * These MIN_VALUE and MAX_VALUE will give range of values that int can store.
+     * 
+     * Note:
+     * We can use _underscore for better readability
+     * 
+     * Example:
+     * int ex = 1_00_000; <- this is valid
+     * => 100000
      */
     int c = 10;
     System.out.println(c);
 
+    // using underscore
+    int ex = 1_00_000;
+    System.out.println(ex);
+
     /*
      * long: (long): This should be used only when the values are high.
-     * To denote it as long, we should append "l" at the end. Otherwise it will take
+     * To denote it as long, we should append "l" or "L" at the end. Otherwise it
+     * will take
      * it as integer and cast it automatically
      * 
      * Size:
@@ -143,9 +155,20 @@ public class PrimitiveDataTypes {
      * -9223372036854775808
      * 
      * These MIN_VALUE and MAX_VALUE will give range of values that long can store.
+     * 
+     * Note:
+     * We can use _underscore for better readability
+     * 
+     * Example:
+     * long example = 1_00_00_00_000; <- this is valid
+     * => 1000000000
      */
     long d = 100000000l;
     System.out.println(d);
+
+    // using underscore
+    long example = 1_00_00_00_000;
+    System.out.println(example);
 
     /* ******************************************** */
     /*
@@ -604,5 +627,23 @@ public class PrimitiveDataTypes {
      */
     int hex = 0x123;
     System.out.println(hex);
+
+    /*
+     * Note:!! Important
+     * var:
+     * This is one of the data type which can be used to assign any value if don't
+     * know what is the data type to be assigned.
+     * 
+     * Based on the value assigned to that variable, it will take the particular
+     * type.
+     * 
+     * But value should be assigned while declaring a variable for this when we use
+     * var.
+     * 
+     * var notSure = 10;
+     * 
+     */
+    var notSure = 10;
+    System.out.println(notSure);
   }
 }
