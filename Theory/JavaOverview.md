@@ -125,10 +125,11 @@ Planet.revolve();
 
 **Comments** are pieces of text added to code to provide explanations or context for anyone reading the code. Comments are ignored by the Java compiler and do not affect program execution. They are meant to help developers understand and maintain the code.
 
-There are two main types of comments in Java:
+There are three main types of comments in Java:
 
 - **Single-line comment:** Use `//` at the beginning of a line. Everything after `//` on that line is considered a comment.
 - **Multi-line comment:** Enclosed between `/*` and `*/`. Everything inside will be ignored by the compiler.
+- **Javadoc comment:** These are the special comments which start with `/**` and end with `*/`. It is used to generate documentation for the code.
 
 **Examples:**
 
@@ -141,7 +142,97 @@ There are two main types of comments in Java:
 */
 ```
 
----
+```java
+/**
+ * This is a javadoc comment
+ * It is used to generate documentation for the code
+ */
+```
+
+### 6. Tokens
+
+Tokens are the fundamental building blocks of a Java program—they are the smallest elements that make up the source code. The main types of tokens in Java are:
+
+- Keywords
+- Identifiers
+- Literals
+- Operators
+- Punctuators
+- Comments
+- Whitespace
+
+**Example:**  
+Consider this line:  
+`System.out.println("Hello, World!");`
+
+In this example:
+
+- `System` is a class
+- `out` is a field
+- `println` is a method
+- `"Hello, World!"` is a string literal
+- `;` is a punctuator (semicolon)
+- `\n` represents whitespace (newline)
+
+#### 6.1: Keywords
+
+Keywords are reserved words in Java that define the syntax and structure of the language. They are case-sensitive, and cannot be used as identifiers.
+
+**Examples of Java keywords:**
+
+- `class`
+- `public`
+- `static`
+- `void`
+- `int`
+- `float`
+- `double`
+- `boolean`
+- `char`
+
+#### 6.2: Identifiers
+
+Identifiers are the names given to variables, methods, classes, packages, and more in Java. They are case-sensitive.
+
+**Examples of identifiers:**
+
+- `name`
+- `age`
+- `isStudent`
+- `$name`
+- `CodeChef`
+- `main()`
+- `println()`
+
+_Note: The rules for creating identifiers are the same as those for defining variables and method names._
+
+#### 6.3: Literals
+
+Literals represent constant values in Java code. There are several kinds of literals:
+
+- String literals
+- Integer literals
+- Float literals
+- Double literals
+- Boolean literals
+- Character literals
+
+### 7. Separators:
+
+Separators are the characters that separate tokens in a Java program. They are used to make the code more readable and understandable.
+
+**Examples of separators:**
+
+- `,` (comma) -> For separating multiple values
+- `;` (semicolon) -> End of the statement
+- `:` (colon)
+- `.` (dot) -> For object access
+- `(` (left parenthesis) -> Start of the method call
+- `)` (right parenthesis) -> End of the method call
+- `{` (left curly brace) -> Start of the block of code
+- `}` (right curly brace) -> End of the block of code
+- `[` (left square bracket) -> Start of the array
+- `]` (right square bracket) -> End of the array
 
 ## Running Java Code Outside of JShell
 
