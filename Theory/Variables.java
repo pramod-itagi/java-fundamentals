@@ -124,5 +124,24 @@ public class Variables {
      * int a = 10; // Not suggested
      * int number = 10; // Valid
      */
+
+    /*
+     * Note:
+     * We can declare many variables in a single line. But make sure that all the
+     * variables should follow same data type.
+     */
+    int x, y, z;
+    double db = 50.0, bd = 99.0;
+
+    /*
+     * We can assign values to variables later as well
+     */
+    x = 10;
+    y = 20;
+    z = 30;
+
+    System.out.println(x + " , " + y + " , " + z);
+    System.out.println(db + " , " + bd);
+
   }
 }
