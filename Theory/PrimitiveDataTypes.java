@@ -304,6 +304,10 @@ public class PrimitiveDataTypes {
     char ch2 = '\n';
     System.out.println(ch2); // This will print a new line
 
+    // We can store number as character as well
+    char numberThree = '3';
+    System.out.println(numberThree);
+
     /* ******************************************** */
     /*
      * boolean: (boolean): This is used to store true or false values.
@@ -494,7 +498,7 @@ public class PrimitiveDataTypes {
      */
 
     /*
-     * Implicit Casting:
+     * Implicit Casting or widening conversion:
      * The process of converting a smaller type to a larger type.
      * For implicit casting, we don't need to do anything. It will be done
      * automatically only if we are putting smaller value into larger value.
@@ -508,7 +512,7 @@ public class PrimitiveDataTypes {
     System.out.println(lg);
 
     /*
-     * Explicit Casting:
+     * Explicit Casting or narrowing conversion:
      * The process of converting a larger type to a smaller type.
      * 
      * Example:
