@@ -143,5 +143,72 @@ public class Variables {
     System.out.println(x + " , " + y + " , " + z);
     System.out.println(db + " , " + bd);
 
+    /*
+     * Scope of the variable:
+     * 
+     * Variables have different scope. Variables which are defined in blocks {} are
+     * accessible to only that block.
+     * Variables which are defined in main method are accessible thought the
+     * program.
+     * If we try to access the variable out out the block and if that variable is
+     * defined inside the block, then we will get compilation error.
+     * 
+     */
+    {
+      int test = 10;
+      System.out.println(test);
+    }
+    // System.out.println(test); <- this will throw an error
+
+    /*
+     * Final keyword:
+     * Final keyword is used to declare a variable whose value cannot be changed
+     * during the execution of the program. If we are sure that value will remain
+     * same throughout the program, then we can declare it with final keyword.
+     * 
+     * Syntax:
+     * final dataType nameOfTheVariable = value;
+     * 
+     * Example:
+     * final int MAX_VALUE = 100;
+     * final double PI = 3.14;
+     * final String NAME = "John";
+     * 
+     * Note:
+     * We cannot change the value of a constant declared with final keyword.
+     * Example: MAX_VALUE = 200; // Error
+     * 
+     * for Constants, we can use uppercase letters for variable name.
+     * 
+     * Example:
+     * final int MAX_VALUE = 100;
+     * final double PI = 3.14;
+     *
+     */
+    final int MAX_VALUE = 100;
+    System.out.println(MAX_VALUE);
+
+    /*
+     * Chain assignment:
+     * 
+     * Chain assignment refers to assigning of the right most value to the left side
+     * and the assignment continues till left most variable.
+     * First we need to declare the variables and then we can use chain assignment.
+     * 
+     * Example:
+     * int a,b,c
+     * a = b = c = 10;
+     * 
+     * Here, the value 10 will be assigned to all the three variables a, b and c.
+     * 
+     */
+    int a1, a2, a3;
+    a1 = a2 = a3 = 10;
+    System.out.println(a1 + " , " + a2 + " , " + a3);
+
+    int b1 = 20; // this value will not be used
+    int b2, b3;
+    b1 = b2 = b3 = 100;
+    System.out.println(b1 + " , " + b2 + " , " + b3);
   }
 }
