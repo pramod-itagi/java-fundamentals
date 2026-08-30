@@ -18,6 +18,10 @@ public class Strings {
      * 
      * It doesn't matter whatever the position of the String. Whenever control sees
      * String, it will concatenate.
+     * 
+     * Note:
+     * When we do concatenation, it creates new String object as Strings are
+     * immutable.
      */
     System.out.println("1" + 10); // "110"
 

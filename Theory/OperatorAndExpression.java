@@ -112,6 +112,50 @@ public class OperatorAndExpression {
     System.out.println((5 + 5) * 6); // 60
 
     /*
+     * Assosiativity: The order in which the operators are evaluated.
+     * 
+     * Example:
+     * All expression will be evaluated from left to right.
+     * 
+     * Example:
+     * 5 + 5 * 6 => 35
+     * 5 * 6 + 5 => 35
+     * 5 + 5 + 6 => 16
+     * 
+     * But = is an exception. It will be evaluated from right to left.
+     * 
+     * Example:
+     * int a = 10;
+     * int b = 20;
+     * int c = a + b; // c = 30
+     * 
+     */
+    int result1 = 2 + 3 * 4;
+    int result2 = (2 + 3) * 4;
+    System.out.println(result1); // 14
+    System.out.println(result2); // 20
+
+    /*
+     * Note: If the precedence is same, then the assosiativity will be followed from
+     * left to right.
+     * 
+     * Even for logical operators, && have higher precedence than ||.
+     */
+
+    /*
+     * Order of precedence as follows:
+     * 1. () -> Highest precedence
+     * 2. ++, --
+     * 3. *, /, %
+     * 4. +, -
+     * 5. >, <, >=, <=
+     * 6. ==, !=
+     * 7. &&
+     * 8. ||
+     * 9. =, +=, -=, *=, /=, %= (Compound assignment operators) -> Lowest precedence
+     */
+
+    /*
      * Assignment Operator: =
      * This is used to assign a value to a variable.
      * 
@@ -128,7 +172,6 @@ public class OperatorAndExpression {
      * a = 20 // Valid
      * a = 20 + a; // Valid
      * 20 = a; // Error
-     * 
      * 
      */
 
@@ -221,5 +264,174 @@ public class OperatorAndExpression {
     int m = 0;
     System.out.println(m--); // It will return 0 because it is post decrement.
     System.out.println(m); // m = -1 Now it will print decremented value.
+
+    /*
+     * Conditional Operators:
+     * These operators compare two values and return a boolean result (true or
+     * false).
+     *
+     * == : Equal to
+     * Returns true if both sides are equal, false otherwise.
+     * 
+     * Examples:
+     * 5 == 5 // true
+     * 5 == 6 // false
+     * 5.0 == 5.0 // true
+     * 5.0 == 5.1 // false
+     * 5.0 == 5 // true (numeric values are the same)
+     * 5 == 5.0 // true
+     * 5 == 5.1 // false
+     * 
+     * Works for character values as well.
+     * 
+     * Example:
+     * 'a' == 'a' // true
+     * 'a' == 'b' // false
+     * 'a' == 'A' // false
+     */
+    System.out.println(5 == 5); // true
+    System.out.println(5 == 6); // false
+    System.out.println(5.0 == 5.0); // true
+    System.out.println(5.0 == 5.1); // false
+    System.out.println(5.0 == 5); // true
+    System.out.println(5 == 5.0); // true
+    System.out.println(5 == 5.1); // false
+    System.out.println(5.0 == 5.1); // false
+
+    /*
+     * != : Not equal to
+     * Returns true if values are different, false if they are the same.
+     * 
+     * Examples:
+     * 5 != 5 // false
+     * 5 != 6 // true
+     * 5.0 != 5.0 // false
+     * 5.0 != 5.1 // true
+     * 5.0 != 5 // false (5.0 and 5 are numerically equal)
+     * 5 != 5.0 // false
+     * 5 != 5.1 // true
+     * 
+     * Works for character values as well.
+     * 
+     * Example:
+     * 'a' != 'a' // false
+     * 'a' != 'b' // true
+     * 'a' != 'A' // true
+     */
+    System.out.println(5 != 5); // false
+    System.out.println(5 != 6); // true
+    System.out.println(5.0 != 5.0); // false
+    System.out.println(5.0 != 5.1); // true
+    System.out.println(5.0 != 5); // false
+    System.out.println(5 != 5.0); // false
+    System.out.println(5 != 5.1); // true
+    System.out.println(5.0 != 5.1); // true
+
+    /*
+     * > : Greater than
+     * Returns true if the value on the left is greater than the value on the right.
+     * 
+     * Examples:
+     * 5 > 5 // false
+     * 5 > 6 // false
+     * 6.0 > 5 // true
+     * 6 > 5 // true
+     * 5.0 > 5.0 // false
+     * 5.0 > 5.1 // false
+     * 5.0 > 5 // false
+     * 5 > 5.0 // false
+     * 
+     * Works for character values as well.
+     * 
+     * Example:
+     * 'a' > 'a' // false
+     * 'a' > 'b' // false
+     * 'a' > 'A' // true => because ASCII value of A is 65 and ASCII value of a is
+     * 97.
+     * 'A' > 'a' // false => because ASCII value of A is 65 and ASCII value of a is
+     * 97.
+     */
+    System.out.println(5 > 5); // false
+    System.out.println(5 > 6); // false
+    System.out.println(6.0 > 5); // true
+    System.out.println(6 > 5); // true
+    System.out.println(5.0 > 5.0); // false
+    System.out.println(5.0 > 5.1); // false
+    System.out.println(5.0 > 5); // false
+    System.out.println(5 > 5.0); // false
+
+    /*
+     * < : Less than
+     * Returns true if the value on the left is less than the value on the right.
+     * 
+     * Examples:
+     * 5 < 5 // false
+     * 5 < 6 // true
+     * 6.0 < 5 // false
+     * 6 < 5 // false
+     * 5.0 < 5.0 // false
+     * 5.0 < 5.1 // true
+     * 5.0 < 5 // false
+     * 5 < 5.0 // false
+     * 
+     * Works for character values as well.
+     * 
+     * Example:
+     * 'a' < 'a' // false
+     * 'a' < 'b' // true
+     * 'a' < 'A' // false
+     * 'A' < 'a' // true => because ASCII value of A is 65 and ASCII value of a is
+     * 97.
+     * 'A' < 'a' // false => because ASCII value of A is 65 and ASCII value of a is
+     * 97.
+     */
+    System.out.println(5 < 5); // false
+    System.out.println(5 < 6); // true
+    System.out.println(6.0 < 5); // false
+    System.out.println(6 < 5); // false
+    System.out.println(5.0 < 5.0); // false
+    System.out.println(5.0 < 5.1); // true
+    System.out.println(5.0 < 5); // false
+    System.out.println(5 < 5.0); // false
+
+    /*
+     * >= : Greater than or equal to
+     * Returns true if the value on the left is greater than or equal to the value
+     * on the right.
+     * 
+     * Examples:
+     * 5 >= 5 // true
+     * 5 >= 6 // false
+     * 6.0 >= 5 // true
+     * 6 >= 5 // true
+     * 5.0 >= 5.0 // true
+     * 5.0 >= 5.1 // false
+     */
+    System.out.println(5 >= 5); // true
+    System.out.println(5 >= 6); // false
+    System.out.println(6.0 >= 5); // true
+    System.out.println(6 >= 5); // true
+    System.out.println(5.0 >= 5.0); // true
+    System.out.println(5.0 >= 5.1); // false
+
+    /*
+     * <= : Less than or equal to
+     * Returns true if the value on the left is less than or equal to the value on
+     * the right.
+     * 
+     * Examples:
+     * 5 <= 5 // true
+     * 5 <= 6 // true
+     * 6.0 <= 5 // false
+     * 6 <= 5 // false
+     * 5.0 <= 5.0 // true
+     * 5.0 <= 5.1 // true
+     */
+    System.out.println(5 <= 5); // true
+    System.out.println(5 <= 6); // true
+    System.out.println(6.0 <= 5); // false
+    System.out.println(6 <= 5); // false
+    System.out.println(5.0 <= 5.0); // true
+    System.out.println(5.0 <= 5.1); // true
   }
 }

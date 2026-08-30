@@ -36,5 +36,50 @@ public class ScannerExample {
     Scanner scanner = new Scanner(System.in);
     String name = scanner.next();
     System.out.printf("Hello %s, welcome to Java learning", name).println();
+
+    /*
+     * nextInt():
+     * Used to get the next integer from the input stream.
+     * Syntax:
+     * int number = scanner.nextInt();
+     * 
+     */
+    System.out.print("Enter your age: ");
+    int age = scanner.nextInt();
+    System.out.printf("You are %d years old", age).println();
+
+    /*
+     * nextFloat():
+     * Used to get the next float from the input stream.
+     * 
+     * Syntax:
+     * float number = scanner.nextFloat();
+     * 
+     */
+    System.out.print("Enter your salary: ");
+    float salary = scanner.nextFloat();
+    System.out.printf("Your salary is %f", salary).println();
+
+    /*
+     * nextDouble():
+     * Used to get the next double from the input stream.
+     * Syntax:
+     * double number = scanner.nextDouble();
+     * 
+     */
+    System.out.print("Enter your salary: ");
+    double salary2 = scanner.nextDouble();
+    System.out.printf("Your salary is %f", salary2).println();
+
+    /*
+     * nextBoolean():
+     * Used to get the next boolean from the input stream.
+     * Syntax:
+     * boolean isTrue = scanner.nextBoolean();
+     * 
+     */
+    System.out.print("Is it true or false ? ");
+    boolean isTrue = scanner.nextBoolean();
+    System.out.printf("It is %b", isTrue).println();
   }
 }
