@@ -19,7 +19,7 @@ public class ConditionalStatements {
     System.out.println(i > 5); // true
 
     /*
-     * Conditional operators are:
+     * Conditional/Relational operators are:
      * > : greater than
      * < : less than
      * >= : greater than or equal to
