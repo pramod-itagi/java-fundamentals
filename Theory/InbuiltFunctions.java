@@ -20,6 +20,31 @@ public class InbuiltFunctions {
      * 
      * Note: Case of the method (System.out.println()) should be same. Otherwise, it
      * will throw an error.
+     * 
+     * So, the structure will be:
+     * For PrintStream:
+     * 
+     * package java.io;
+     * 
+     * class PrintStream {
+     * public void println() {
+     * }
+     * }
+     * 
+     * For System:
+     * 
+     * package java.lang;
+     * import java.io.PrintStream;
+     * 
+     * Class System {
+     * public static final PrintStream out = new PrintStream();
+     * }
+     * 
+     * Now when we call System.out.println()
+     * => System is class which internally gets PrintStream object
+     * => out is object which was created in System class
+     * => as out is out is static field, we need to use System.out to call println()
+     * method.
      */
     System.out.println("Hell World");
     System.out.println(3 * 4);
