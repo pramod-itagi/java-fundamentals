@@ -22,6 +22,9 @@ public class Strings {
      * Note:
      * When we do concatenation, it creates new String object as Strings are
      * immutable.
+     * 
+     * Immutable refers to the fact that the string object cannot be changed after
+     * it is created.
      */
     System.out.println("1" + 10); // "110"
 
@@ -344,5 +347,99 @@ public class Strings {
     String str14 = "BiggerString";
     System.out.println(str14.equalsIgnoreCase("BIGGERSTRING")); // true
     System.out.println(str14.equalsIgnoreCase("SmallerString")); // false
+
+    /*
+     * concat():
+     * concat() method is used to concatenate the specified string to the end of the
+     * current string.
+     * It returns a new string with the concatenated string.
+     * 
+     * Syntax:
+     * String str = "BiggerString";
+     * String concat = str.concat("String");
+     * System.out.println(concat); // "BiggerStringString"
+     */
+    String str15 = "BiggerString";
+    System.out.println(str15.concat("String")); // "BiggerStringString"
+    System.out.println(str15); // "BiggerString" because concat() returns a new string but doesn't modify the
+                               // original string.
+    String anotherString = str15.concat("New String");
+    System.out.println(anotherString); // "BiggerStringNew String"
+
+    /*
+     * toUpperCase():
+     * toUpperCase() method is used to convert the string to uppercase.
+     * It returns a new string with the uppercase string.
+     * 
+     * Syntax:
+     * String str = "BiggerString";
+     * String upperCase = str.toUpperCase();
+     * System.out.println(upperCase); // "BIGGERSTRING"
+     */
+    String str16 = "BiggerString";
+    System.out.println(str16.toUpperCase()); // "BIGGERSTRING"
+
+    /*
+     * toLowerCase():
+     * toLowerCase() method is used to convert the string to lowercase.
+     * It returns a new string with the lowercase string.
+     * 
+     * Syntax:
+     * String str = "BiggerString";
+     * String lowerCase = str.toLowerCase();
+     * System.out.println(lowerCase); // "biggerstring"
+     */
+    String str17 = "BiggerString";
+    System.out.println(str17.toLowerCase()); // "biggerstring"
+
+    /*
+     * trim():
+     * trim() method is used to remove the leading and trailing whitespace from the
+     * string.
+     * It returns a new string with the trimmed string.
+     * 
+     * Note:
+     * It won't remove spaces between the words.
+     * 
+     * Syntax:
+     * String str = " BiggerString ";
+     * String trimmed = str.trim();
+     * System.out.println(trimmed); // "BiggerString"
+     */
+    String str18 = " BiggerString ";
+    System.out.println(str18.trim()); // "BiggerString"
+
+    /*
+     * join():
+     * join() method is used to join the specified strings with the delimiter.
+     * It returns a new string with the joined string.
+     * 
+     * Note:
+     * If we want to use join() method, then we have to use Static utility method
+     * called "String" and then use .join() method on that.
+     * We cannot use it directly on string object which are created as variables.
+     * 
+     * Delimiter can be any symbol or character or number.
+     * 
+     * Syntax:
+     * String joined = String.join("-", "Bigger", "String");
+     * System.out.println(joined); // "Bigger-String"
+     */
+    System.out.println(String.join("-", "Bigger", "String")); // "Bigger-String"
+    System.out.println(String.join(".", "abc@yahoo", "com")); // "abc@yahoo.com"
+
+    /*
+     * replace():
+     * replace() method is used to replace the specified string with the new string.
+     * It returns a new string with the replaced string.
+     * 
+     * Syntax:
+     * String str = "BiggerString";
+     * String replaced = str.replace("Bigger", "Smaller");
+     * System.out.println(replaced); // "SmallerString"
+     */
+    String str19 = "BiggerString";
+    System.out.println(str19.replace("Bigger", "Smaller")); // "SmallerString"
+    System.out.println(str19.replace("r", "R")); // "BiggeRStRing"
   }
 }
