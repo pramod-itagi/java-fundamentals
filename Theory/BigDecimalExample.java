@@ -6,7 +6,8 @@ public class BigDecimalExample {
   public static void main(String[] args) {
     /*
      * BigDecimal provides precise storage for decimal values, making it ideal for
-     * financial calculations that require accuracy.
+     * financial calculations that require accuracy. It is not a wrapper class as it
+     * doesn't have related primitive data type.
      * 
      * BigDecimal belongs to the java.math package, so you need to import it as
      * follows:
@@ -18,8 +19,9 @@ public class BigDecimalExample {
      * 
      * Note:
      * The value passed should always be a String. Avoid using float or double
-     * values directly,
-     * as doing so can lead to precision errors. For example:
+     * values directly, as doing so can lead to precision errors.
+     * 
+     * For example:
      * BigDecimal bd = new BigDecimal(20.12312414151);
      * // bd will contain: 20.123124141510000839616623125039041042327880859375
      * 

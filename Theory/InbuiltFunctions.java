@@ -123,9 +123,9 @@ public class InbuiltFunctions {
      * To avoid printing that PrintStream object, we can add .println() after
      * printf() to print the output on the console.
      * 
-     * We can use modifiers to format the output and print values.
+     * We can use format specifiers to format the output and print values.
      * 
-     * Here are the modifiers for each types:
+     * Here are the format specifiers for each types:
      * 
      * For integers => %d
      * For floating point numbers => %f
@@ -136,27 +136,28 @@ public class InbuiltFunctions {
      */
     System.out.printf("5 * 2 = 10").println();
 
-    // calculated value using modifier
+    // calculated value using format specifier
     System.out.printf("5 * 2 = %d", 5 * 2).println(); // 5 * 2 = 10
     System.out.printf("%d + %d + %d = %d", 5, 6, 7, 5 + 6 + 7).println(); // 5 + 6 + 7 = 18
 
     /*
      * Note 1:
-     * Numbers of parameters passed should be same as the number of modifiers used.
-     * Otherwise it will throw an error.
+     * Numbers of parameters passed should be same as the number of format
+     * specifiers used. Otherwise it will throw an error.
      * 
      * Example:
      * System.out.printf("5 * 2 = %d", 5 * 2).println(); // 5 * 2 = 10
-     * here exactly 1 parameter is passed and 1 modifier is used.
+     * here exactly 1 parameter is passed and 1 format specifier is used.
      * 
-     * Suppose if passed parameters are less than the number of modifiers used, it
+     * Suppose if passed parameters are less than the number of format specifiers
+     * used, it
      * will throw an error.
      * 
      * Example:
      * System.out.printf("%d + %d + %d = %d", 5, 6, 7).println(); // error
      * 
-     * Suppose extra parameters are passed than the specified number of modifiers,
-     * then extra parameters will be ignored.
+     * Suppose extra parameters are passed than the specified number of format
+     * specifiers, then extra parameters will be ignored.
      * 
      * Example:
      * System.out.printf("%d + %d + %d = %d", 5, 6, 7, 5 + 6 + 7, 8).println(); // 5
@@ -165,7 +166,7 @@ public class InbuiltFunctions {
      */
 
     /*
-     * Note 2: Datatype of the parameters should match with the modifier.
+     * Note 2: Datatype of the parameters should match with the format specifier.
      * Otherwise it will throw an error.
      * 
      * Example:
@@ -186,6 +187,10 @@ public class InbuiltFunctions {
      * Example:
      * 2 refers 2 digits after decimal point -> 5.00
      * 3 refers 3 digits after decimal point -> 5.000
+     * 
+     * Note:
+     * For decimal values, we can use %f for both float and double values. We don't
+     * have specific format specifier for double.
      */
     System.out.printf("%f + %f = %f", 5.0, 6.2, 5.0 + 6.2).println();
 

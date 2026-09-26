@@ -212,8 +212,13 @@ public class OperatorAndExpression {
      * Compound operation will be:
      * i += 2;
      * 
-     * Note: +=, -=, *=, /=, %= are the shortcut operators.
+     * Note 1:
+     * +=, -=, *=, /=, %= are the shortcut operators.
      * 
+     * Note 2:
+     * Compound operators, it always contains two operators and among them one will
+     * be = operator always and it will be present at the end. While other operator
+     * can be anything.
      */
 
     int i = 0;
