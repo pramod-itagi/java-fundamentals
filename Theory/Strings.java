@@ -358,6 +358,14 @@ public class Strings {
      * String str = "BiggerString";
      * String concat = str.concat("String");
      * System.out.println(concat); // "BiggerStringString"
+     * 
+     * Note:
+     * We can use as many concat() methods as we want.
+     * 
+     * Syntax:
+     * String str = "BiggerString";
+     * String concat = str.concat("String").concat("New String");
+     * System.out.println(concat); // "BiggerStringStringNew String"
      */
     String str15 = "BiggerString";
     System.out.println(str15.concat("String")); // "BiggerStringString"

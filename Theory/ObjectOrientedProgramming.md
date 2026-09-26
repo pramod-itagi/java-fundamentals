@@ -47,6 +47,17 @@ The "behavior" of an object is what it can do, or what actions it can perform. T
 **Instance Variable:**  
 Instance variables are the variables that belong to each object created from a class. You can only use them through a specific object (not directly from the class itself).
 
+**Instance Method:**  
+Instance methods are the methods that belong to each object created from a class. You can only use them through a specific object (not directly from the class itself).
+
+**Static Method:**
+Static methods are methods that belong to the class itself, not to any specific object. You can call them using the class name (without creating an object).
+Example:
+
+```
+Math.max(10, 20);
+```
+
 **Encapsulation:**  
 Encapsulation means keeping the data (variables) of a class private, so they can't be changed directly from outside the class. If another class wants to access or update the data, it must use special methods. This protects the data and lets you check or control changes to it.
 

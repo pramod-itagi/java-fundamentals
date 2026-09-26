@@ -33,7 +33,7 @@ public class ConditionalStatements {
      */
 
     /*
-     * if:
+     * if(){}:
      * if condition is used to check the condition. Based on the
      * condition result, we can change the flow of the program.
      * 
@@ -54,7 +54,7 @@ public class ConditionalStatements {
     System.out.println("j is prime");
 
     /*
-     * Note: if() statements can have only 1 statements under it. Hence, when j
+     * Note: if(){} statements can have only 1 statements under it. Hence, when j
      * becomes 6, "j is prime" is only printed. If we want to execute both
      * statements, we need to use blocks.
      * 
@@ -71,7 +71,6 @@ public class ConditionalStatements {
      * 
      * They define the scope of different programming elements.
      * They are also used to indent the code properly.
-     * 
      */
     if (j == 5) {
       System.out.println("j is odd");
@@ -79,8 +78,9 @@ public class ConditionalStatements {
     System.out.println("j is prime");
 
     /*
-     * if/else:
-     * if/else is used to check the condition. If the condition is true, the code
+     * if(){} / else{}:
+     * if(){} / else{} is used to check the condition. If the condition is true, the
+     * code
      * inside the if block will be executed. If the condition is false, the code
      * inside the else block will be executed.
      * 
@@ -103,8 +103,9 @@ public class ConditionalStatements {
     }
 
     /*
-     * if/else if/else:
-     * if/else if/else is used to check multiple conditions at different stages.
+     * if(){} / else if(){} / else{}:
+     * if(){} / else if(){} / else{} is used to check multiple conditions at
+     * different stages.
      * 
      * If the first condition is true, the code inside the if block will be
      * executed.
