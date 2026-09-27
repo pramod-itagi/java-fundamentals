@@ -320,6 +320,27 @@ public class Strings {
      * boolean equals = str == "SmallerString";
      * System.out.println(equals); // false
      * 
+     * Note:
+     * There is a difference between equals() and == operator.
+     * equals() method compares the content of the string, while == operator
+     * compares the reference of the string.
+     * 
+     * Syntax:
+     * String str = "BiggerString";
+     * String str2 = "BiggerString";
+     * boolean equals = str == str2;
+     * System.out.println(equals); // true
+     * 
+     * while
+     * 
+     * String str3 = new String("BiggerString");
+     * String str4 = new String("BiggerString");
+     * boolean equals = str3 == str4;
+     * System.out.println(equals); // false
+     * 
+     * Because when we use "new", it creates new memory location for the string and
+     * hence reference will be different. But without "new", it creates string
+     * in String pool and hence reference will be same.
      */
     String str13 = "BiggerString";
     System.out.println(str13.equals("BiggerString")); // true

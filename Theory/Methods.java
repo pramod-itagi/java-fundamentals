@@ -227,5 +227,20 @@ public class Methods {
      */
     int max = Math.max(2, 3); // Calling Math.max method and storing the result in max
     System.out.println(max);
+
+    /*
+     * identityHashCode:
+     * This method is used to get the hash code of an object (memory address)
+     * It is a method of the System class.
+     * 
+     * Syntax:
+     * int identityHashCode = System.identityHashCode(object);
+     * 
+     * Example:
+     * int identityHashCode = System.identityHashCode("Pramod");
+     * System.out.println(identityHashCode);
+     */
+    Methods methods = new Methods();
+    System.out.println(System.identityHashCode(methods)); // 312714112
   }
 }

@@ -45,7 +45,6 @@ public class OperatorAndExpression {
      * Example:
      * 5 % 6 => 5 ( 5 is lesser than 6)
      * 6 % 2 => 0 ( 6 is greater than 2)
-     * 
      */
 
     // Complex operators
@@ -128,7 +127,6 @@ public class OperatorAndExpression {
      * int a = 10;
      * int b = 20;
      * int c = a + b; // c = 30
-     * 
      */
     int result1 = 2 + 3 * 4;
     int result2 = (2 + 3) * 4;
@@ -172,7 +170,6 @@ public class OperatorAndExpression {
      * a = 20 // Valid
      * a = 20 + a; // Valid
      * 20 = a; // Error
-     * 
      */
 
     /*
