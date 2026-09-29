@@ -114,5 +114,25 @@ public class ScannerExample {
     System.out.print("Enter your name: ");
     String name3 = scanner.nextLine();
     System.out.printf(name3); // Prints the entire line.
+
+    // close the scanner
+    scanner.close();
+
+    /*
+     * Note:
+     * scanner.close():
+     * Always close the scanner after use to free up the resources. If it is not
+     * closed, it will cause memory leak.
+     * 
+     * Syntax:
+     * scanner.close();
+     * 
+     * Example:
+     * Scanner scanner = new Scanner(System.in);
+     * scanner.close();
+     *
+     */
+    Scanner scanner2 = new Scanner(System.in);
+    scanner2.close();
   }
 }

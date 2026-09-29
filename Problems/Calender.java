@@ -89,6 +89,9 @@ public class Calender {
     System.out.print("Enter the number month: ");
     int numberMonth = scanner.nextInt();
     System.out.println(determineNameOfTheMonth(numberMonth));
+
+    // close the scanner
+    scanner.close();
   }
 
 }
