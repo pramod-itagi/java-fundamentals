@@ -19,5 +19,7 @@ public class Cube {
         System.out.println("Cube is: " + result);
     } while (number >= 0);
     System.out.println("Thank you! Have fun!");
+    // close the scanner
+    sc.close();
   }
 }

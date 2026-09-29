@@ -99,9 +99,28 @@ public class Strings {
      * int index = str.indexOf('x');
      * System.out.println(index); // -1
      * 
+     * Note:
+     * indexOf() method can also be used to find the index of the first occurrence
+     * of the specified string. We can say substring of string using indexOf()
+     * method.
+     * 
+     * Syntax:
+     * String str = "Test is good";
+     * int index = str.indexOf("is");
+     * System.out.println(index); // 5
+     * 
+     * Note:
+     * If the string is not found, it returns -1.
+     * 
+     * If indexOf() is passed with:
+     * Character(''): It returns first occurrence of the character in the string.
+     * String(""): It returns first occurrence of the string in the string.
      */
     String str1 = "Pramod";
     System.out.println(str1.indexOf('o')); // 4
+
+    String str2 = "Test is good";
+    System.out.println(str2.indexOf("is")); // 5
 
     /*
      * charAt():

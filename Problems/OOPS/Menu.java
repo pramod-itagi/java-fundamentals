@@ -34,6 +34,8 @@ public class Menu {
       performOperationsUsingSwitch(number1, number2, choice);
 
     } while (choice != 5);
+    // close the scanner
+    scanner.close();
   }
 
   private static void performOperationsUsingSwitch(int number1, int number2, int choice) {
