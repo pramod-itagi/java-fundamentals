@@ -245,9 +245,25 @@ public class Strings {
      * String str = "BiggerStringString";
      * int index = str.lastIndexOf("String");
      * System.out.println(index); // 12
+     * 
+     * Note:
+     * If the string is not found, it returns -1.
+     * 
+     * Syntax:
+     * String str = "BiggerStringString";
+     * int index = str.lastIndexOf("abc");
+     * System.out.println(index); // -1
+     * 
+     * Note:
+     * We can search character as well using lastIndexOf() method.
+     * 
+     * Syntax:
+     * String str = "String is good";
+     * int index = str.lastIndexOf('i');
+     * System.out.println(index); // 7
      */
-    String str8 = "BiggerStringString";
-    System.out.println(str8.lastIndexOf("String")); // 12
+    String str8 = "String is good";
+    System.out.println(str8.lastIndexOf('i')); // 7
 
     /*
      * startsWith():
