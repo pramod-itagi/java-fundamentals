@@ -195,7 +195,8 @@ public class Strings {
      * contains():
      * contains() method is used to check if the string contains in the given
      * string.
-     * It returns true if the string contains the given string, otherwise false.
+     * It returns boolean value like true or false. It returns true if the string
+     * contains the given string, otherwise false.
      * 
      * Syntax:
      * String str = "BiggerString";
@@ -204,10 +205,23 @@ public class Strings {
      * 
      * Note:
      * If the string is not found, it returns false.
+     * contains() method is case sensitive. It treats "String" and "string" as
+     * different strings.
      * 
+     * Note!! (Important):
+     * Even empty string "" is also a string. So if we pass empty string in
+     * contains() method, it will return true.
+     * 
+     * Syntax:
+     * String str = "BiggerString";
+     * boolean contains = str.contains("");
+     * System.out.println(contains); // true
      */
     String str6 = "BiggerString";
     System.out.println(str6.contains("String")); // true
+
+    String str67 = "BiggerString";
+    System.out.println(str67.contains("string")); // false
 
     /*
      * indexOf():
@@ -269,15 +283,29 @@ public class Strings {
      * startsWith():
      * startsWith() method is used to check if the string starts with the specified
      * string passed as argument.
-     * It returns true if the string starts with the specified string, otherwise
-     * false.
+     * It returns boolean value like true or false. It returns true if the string
+     * starts with the specified string, otherwise false.
      * 
-     * It acts like a prefix or pattern.
+     * Usages:
+     * This method is helpful for validating prefixes in strings, such as file
+     * names, URLs, or structured data.
      * 
      * Syntax:
      * String str = "BiggerString";
      * boolean startsWith = str.startsWith("Bigger");
      * System.out.println(startsWith); // true
+     * 
+     * boolean startsWith = str.startsWith("Big");
+     * System.out.println(startsWith); // true
+     * 
+     * Note:
+     * startsWith() method is case sensitive. It treats "Bigger" and "bigger" as
+     * different strings.
+     * 
+     * Syntax:
+     * String str = "BiggerString";
+     * boolean startsWith = str.startsWith("bigger");
+     * System.out.println(startsWith); // false
      * 
      * boolean startsWith = str.startsWith("Big");
      * System.out.println(startsWith); // true
@@ -291,10 +319,12 @@ public class Strings {
      * endsWith():
      * endsWith() method is used to check if the string ends with the specified
      * string passed as argument.
-     * It returns true if the string ends with the specified string, otherwise
-     * false.
+     * It returns boolean value like true or false. It returns true if the string
+     * ends with the specified string, otherwise false.
      * 
-     * It acts like a suffix or pattern.
+     * Usages:
+     * This method is helpful for validating suffixes in strings, such as file
+     * names, URLs, or structured data.
      * 
      * Syntax:
      * String str = "BiggerString";
@@ -302,6 +332,18 @@ public class Strings {
      * System.out.println(endsWith); // true
      *
      * boolean endsWith = str.endsWith("ing");
+     * System.out.println(endsWith); // true
+     * 
+     * Note:
+     * endsWith() method is case sensitive. It treats "String" and "string" as
+     * different strings.
+     * 
+     * Syntax:
+     * String str = "BiggerString";
+     * boolean endsWith = str.endsWith("string");
+     * System.out.println(endsWith); // false
+     * 
+     * boolean endsWith = str.endsWith("String");
      * System.out.println(endsWith); // true
      * 
      */
@@ -432,7 +474,8 @@ public class Strings {
 
     /*
      * toUpperCase():
-     * toUpperCase() method is used to convert the string to uppercase.
+     * toUpperCase() method is used to convert all the characters in string to
+     * uppercase.
      * It returns a new string with the uppercase string.
      * 
      * Syntax:
@@ -445,7 +488,8 @@ public class Strings {
 
     /*
      * toLowerCase():
-     * toLowerCase() method is used to convert the string to lowercase.
+     * toLowerCase() method is used to convert all the characters in string to
+     * lowercase.
      * It returns a new string with the lowercase string.
      * 
      * Syntax:
