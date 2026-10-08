@@ -488,7 +488,7 @@ public class Strings {
 
     /*
      * toLowerCase():
-     * toLowerCase() method is used to convert all the characters in string to
+     * toLowerCase() method is used to convert all the characters in the string to
      * lowercase.
      * It returns a new string with the lowercase string.
      * 
@@ -540,11 +540,20 @@ public class Strings {
      * replace():
      * replace() method is used to replace the specified string with the new string.
      * It returns a new string with the replaced string.
+     * It replaces all the occurrences of the specified string with the new string.
      * 
      * Syntax:
      * String str = "BiggerString";
      * String replaced = str.replace("Bigger", "Smaller");
      * System.out.println(replaced); // "SmallerString"
+     * 
+     * Note:
+     * We can also replace a character with a new character.
+     * 
+     * Syntax:
+     * String str = "BiggerString";
+     * String replaced = str.replace("r", "R");
+     * System.out.println(replaced); // "BiggeRStRing"
      */
     String str19 = "BiggerString";
     System.out.println(str19.replace("Bigger", "Smaller")); // "SmallerString"
