@@ -205,17 +205,7 @@ public class Strings {
      * 
      * Note:
      * If the string is not found, it returns false.
-     * contains() method is case sensitive. It treats "String" and "string" as
-     * different strings.
      * 
-     * Note!! (Important):
-     * Even empty string "" is also a string. So if we pass empty string in
-     * contains() method, it will return true.
-     * 
-     * Syntax:
-     * String str = "BiggerString";
-     * boolean contains = str.contains("");
-     * System.out.println(contains); // true
      */
     String str6 = "BiggerString";
     System.out.println(str6.contains("String")); // true
@@ -488,8 +478,7 @@ public class Strings {
 
     /*
      * toLowerCase():
-     * toLowerCase() method is used to convert all the characters in the string to
-     * lowercase.
+     * toLowerCase() method is used to convert the string to lowercase.
      * It returns a new string with the lowercase string.
      * 
      * Syntax:
