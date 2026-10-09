@@ -74,7 +74,7 @@ public class Strings {
 
     /*
      * length():
-     * lentgth() method is used to find the length of the string. It returns the
+     * length() method is used to find the length of the string. It returns the
      * number of characters in the string.
      */
     String str = "Pramod";
@@ -425,7 +425,7 @@ public class Strings {
     System.out.println(str13.equals("SmallerString")); // false
 
     /*
-     * equalsIngnoreCase():
+     * equalsIgnoreCase():
      * equalsIgnoreCase() method is used to check if the string is equal to the
      * specified string passed as argument ignoring case. It is case insensitive.
      * It returns true if the string is equal to the specified string, otherwise
