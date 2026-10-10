@@ -531,8 +531,15 @@ public class Strings {
      * Delimiter can be any symbol or character or number.
      * 
      * Syntax:
+     * String.join("delimiter", "string1", "string2", "string3");
+     * 
+     * Example:
      * String joined = String.join("-", "Bigger", "String");
      * System.out.println(joined); // "Bigger-String"
+     * 
+     * Note:
+     * When we use join() method, it will join the strings with the delimiter and
+     * return a new string.
      */
     System.out.println(String.join("-", "Bigger", "String")); // "Bigger-String"
     System.out.println(String.join(".", "abc@yahoo", "com")); // "abc@yahoo.com"
@@ -559,5 +566,148 @@ public class Strings {
     String str19 = "BiggerString";
     System.out.println(str19.replace("Bigger", "Smaller")); // "SmallerString"
     System.out.println(str19.replace("r", "R")); // "BiggeRStRing"
+
+    /*
+     * split(String delimiter):
+     * split() method is used to split the string into an array of strings based on
+     * the delimiter passed as argument. This is helpful while breaking down the
+     * statements, processing text files, parsing data etc.
+     * 
+     * String delimiter can be any symbol or character or number.
+     * 
+     * It returns an array of strings. So, while storing the result of split()
+     * method, we should use array of strings.
+     * 
+     * Syntax:
+     * String str = "Delhi,Mumbai,Chennai,Kolkata";
+     * String[] split = str.split(",");
+     * System.out.println(split); // ["Delhi", "Mumbai", "Chennai", "Kolkata"]
+     * 
+     * To access specific element of the array, we can use index.
+     * 
+     * Syntax:
+     * String str = "Delhi,Mumbai,Chennai,Kolkata";
+     * String[] split = str.split(",");
+     * System.out.println(split[0]); // "Delhi"
+     * System.out.println(split[1]); // "Mumbai"
+     * System.out.println(split[2]); // "Chennai"
+     * System.out.println(split[3]); // "Kolkata"
+     */
+    String str20 = "Delhi,Mumbai,Chennai,Kolkata";
+    String[] split = str20.split(",");
+    System.out.println(split[0]); // "Delhi"
+    System.out.println(split[1]); // "Mumbai"
+    System.out.println(split[2]); // "Chennai"
+    System.out.println(split[3]); // "Kolkata"
+
+    /*
+     * Note:
+     * If we try to access index which is out of range, it will throw
+     * ArrayIndexOutOfBoundsException.
+     * 
+     * Syntax:
+     * String str = "Delhi,Mumbai,Chennai,Kolkata";
+     * String[] split = str.split(",");
+     * System.out.println(split[4]); // ArrayIndexOutOfBoundsException
+     */
+    String str21 = "Delhi,Mumbai,Chennai,Kolkata";
+    String[] split21 = str21.split(",");
+    System.out.println(split21[4]); // ArrayIndexOutOfBoundsException
+
+    /*
+     * Conversions:
+     * We can use wrapper classes to convert strings to primitive data types and
+     * vice versa.
+     */
+
+    /*
+     * To convert from String to primitive data type:
+     * parseXXX() method is used to convert the string to the primitive data type.
+     * Here XXX stands for primitive data type.
+     * 
+     * For example:
+     * parseInt() method is used to convert the string to the int data type.
+     * parseLong() method is used to convert the string to the long data type.
+     * parseFloat() method is used to convert the string to the float data type.
+     * parseDouble() method is used to convert the string to the double data type.
+     * parseBoolean() method is used to convert the string to the boolean data type.
+     * 
+     * Syntax:
+     * String str = "123";
+     * int num = Integer.parseInt(str);
+     */
+    String str22 = "123";
+    int num = Integer.parseInt(str22);
+    System.out.println(num); // 123
+
+    String str23 = "123.45";
+    double num2 = Double.parseDouble(str23);
+    System.out.println(num2); // 123.45
+
+    String str24 = "true";
+    boolean bool = Boolean.parseBoolean(str24);
+    System.out.println(bool); // true
+
+    String str25 = "123";
+    long num3 = Long.parseLong(str25);
+    System.out.println(num3); // 123
+
+    /*
+     * Note:
+     * If we try to convert a String into primitive which is not a number, it will
+     * throw an error.
+     */
+    String str26 = "123abc";
+    int num4 = Integer.parseInt(str26);
+    System.out.println(num4); // NumberFormatException
+
+    /*
+     * To convert from Primitive data type to String:
+     * String.valueOf() method is used to convert the primitive data type to the
+     * string.
+     * It returns a new string with the converted string.
+     * 
+     * Syntax:
+     * int num = 123;
+     * String str = String.valueOf(num);
+     * System.out.println(str); // "123"
+     */
+    int num5 = 123;
+    String str27 = String.valueOf(num5);
+    System.out.println(str27); // "123"
+
+    long num6 = 1234567890;
+    String str28 = String.valueOf(num6);
+    System.out.println(str28); // "1234567890"
+
+    boolean bool2 = true;
+    String str29 = String.valueOf(bool2);
+    System.out.println(str29); // "true"
+
+    float num7 = 123.45f;
+    String str30 = String.valueOf(num7);
+    System.out.println(str30); // "123.45"
+
+    double num8 = 1234567890.1234567890;
+    String str31 = String.valueOf(num8);
+    System.out.println(str31); // "1234567890.1234567890"
+
+    /*
+     * Note:
+     * We can also use toString() method to convert primitive data type to string.
+     */
+    int num9 = 123;
+    String str32 = Integer.valueOf(num9).toString();
+    System.out.println(str32); // "123"
+
+    /*
+     * Note:
+     * int num10 = 12345;
+     * String str33 = num10.toString(); // This will throw an error. Because we
+     * cannot use toString on primitive data types as these are not objects. We need
+     * to use wrapper classes.
+     * System.out.println(str33); // "12345"
+     */
+
   }
 }
